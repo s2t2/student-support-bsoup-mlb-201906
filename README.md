@@ -174,5 +174,46 @@ pip install -r requirements.txt
 ```
 
 ```sh
-python get_stats.py
+python get_stats.py # THIS APPROACH DOESN'T WORK!
+
+# THIS APPROACH USES SELENIUM
+# AND REQUIRES "chromedriver" TO BE INSTALLED
+# BUT WORKS!
+python wait_for_stats.py
+```
+
+Success. Example output:
+
+```py
+#> GETTING MLB STATS FROM https://www.baseball-reference.com/players/c/cessalu01.shtml
+#> <class 'selenium.webdriver.chrome.webdriver.WebDriver'>
+#> Luis Cessa Stats | Baseball-Reference.com
+#> WAITING FOR PAGE CONTENTS TO LOAD...
+#> PAGE CONTENTS LOADED!
+#> PARSING HTML TABLE...
+#> <class 'bs4.BeautifulSoup'>
+#> 2019 STATS:
+#> THE age STAT VALUE IS: 27
+#> THE team_ID STAT VALUE IS: NYY
+#> THE lg_ID STAT VALUE IS: AL
+#> THE IP STAT VALUE IS: 31.0
+#> THE G STAT VALUE IS: 20
+#> THE GS STAT VALUE IS: 0
+#> THE R STAT VALUE IS: 22
+#> THE runs_avg STAT VALUE IS: 6.39
+#> THE opp_runs_avg STAT VALUE IS: 4.55
+#> THE runs_avg_defense STAT VALUE IS: -0.16
+#> THE runs_avg_sprp STAT VALUE IS: -0.31
+#> THE PPF_custom STAT VALUE IS: 99.1
+#> THE runs_avg_avg_pitcher STAT VALUE IS: 4.37
+#> THE runs_above_avg_pitch STAT VALUE IS: -7
+#> THE WAA STAT VALUE IS: -0.7
+#> THE GR_leverage_index_avg STAT VALUE IS: .90
+#> THE WAA_adj STAT VALUE IS: -0.1
+#> THE WAR_pitch STAT VALUE IS: -0.4
+#> THE runs_above_rep_pitch STAT VALUE IS: -4
+#> THE waa_win_perc STAT VALUE IS: .467
+#> THE waa_win_perc_162 STAT VALUE IS: .496
+#> THE Salary STAT VALUE IS: $578,975
+#> THE award_summary STAT VALUE IS:
 ```

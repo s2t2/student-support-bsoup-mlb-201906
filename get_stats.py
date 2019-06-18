@@ -34,4 +34,4 @@ print(soup.text)
 # BUT WE CAN TRY AN APPROACH USING SELENIUM TO "WAIT" FOR THE PAGE CONTENTS TO LOAD BEFORE PARSING THEM...
 
 
-# SEE: get_stats2.py
+# SEE: wait_for_stats.py
